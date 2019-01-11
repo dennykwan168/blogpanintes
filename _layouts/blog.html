@@ -1,0 +1,55 @@
+---
+layout: default
+title: Belajar Investasi
+---
+
+<div class="row" id="blog-nav">
+    <div class="col s12">
+        <ul class="tabs">
+            <li class="col s3"><span>Belajar Investasi</span></li>
+            <li class="tab col s2"><a href="#blog-latest">
+                    <h5>Terbaru</h5>
+                </a></li>
+            <li class="tab col s2"><a href="#blog-saham">
+                    <h5>Saham</h5>
+                </a></li>
+            <li class="tab col s2"><a href="#">
+                    <h5>Reksadana</h5>
+                </a></li>
+        </ul>
+    </div>
+
+    <div id="blog-latest">
+        <div class="row" id="cover-blog-wrapper">
+            <div class="col s12 l8 no-padding" id="cover-blog-image"></div>
+
+            <div class="col s12 l4" id="cover-blog">
+                <h4 id="featured-category">CATEGORY</h4>
+                <h2 id="featured-title">Bagaimana cara memilih saham yang benar?</h3>
+                <h5 id="featured-excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec lacus vel diam tempus aliquam. Duis posuere, lorem nec venenatis aliquam, nisi arcu varius tortor, sit amet cursus lacus dolor a tellus. Suspendisse aliquam molestie aliquet. Nam finibus sem accumsan pretium dictum.</h5>
+                <a class="btn-flat" href="#">BACA ARTIKEL <i class="material-icons right">keyboard_arrow_right</i></a>
+            </div>
+        </div>
+        <div class="row" id="all-post-wrapper" style="display:none">
+            <div class="col s12 l8 no-padding" id="cover-blog-image"></div>
+
+            <div class="col s12 l4" id="all-post">
+                <h4 id="featured-category">CATEGORY</h4>
+                <h2 id="featured-title">Bagaimana cara memilih saham yang benar?</h3>
+                <h5 id="featured-excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec lacus vel diam tempus aliquam. Duis posuere, lorem nec venenatis aliquam, nisi arcu varius tortor, sit amet cursus lacus dolor a tellus. Suspendisse aliquam molestie aliquet. Nam finibus sem accumsan pretium dictum.</h5>
+                <a class="btn-flat" href="#">BACA ARTIKEL <i class="material-icons right">keyboard_arrow_right</i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" id="blog-saham">
+        <ul>
+            {% for post in site.posts %}
+            <li>
+                <a href="{{ post.url }}">{{ post.title }}</a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+

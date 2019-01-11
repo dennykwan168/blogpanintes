@@ -434,3 +434,81 @@ background-color:$primary-color;
 .bank-logo {
     padding: 10px 12px;
 }
+
+/*-------------------------------------------------------------blog.html-------------------------------------------------------------*/
+#blog-nav {
+    margin-bottom: 0;
+    filter: drop-shadow(0px 5px 4px rgba(0, 0, 0, 0.1));
+    .s12 {
+        margin-top: 25px;
+        padding: 0;
+    }
+    h5 {
+        margin: 5px 0;
+        font-size: 14px;
+        font-weight: 400;
+        text-transform: none;
+        transition: color 0.2s ease-in-out;
+        &:hover {
+            color: black;
+        }
+    }
+    .s2 {
+        width: 10%;
+    }
+    .s3 {
+        padding-left: 60px;
+        width: 20%;
+        span {
+            font-size: 22px;
+            color: black;
+        }
+    }
+    a.active {
+        color: black;
+        h5 {
+            font-weight: 500;
+        }
+    }
+}
+
+#blog-latest {
+    z-index: -5;
+    #cover-blog-wrapper {
+        height: 500px;
+        #cover-blog-image {
+            height: 500px;
+            background-color: red;
+            margin-top: 0;
+        }
+        #cover-blog {
+            height: 500px;
+            padding-left: 20px;
+            padding-right: 15px;
+            margin-top: 0;
+            #featured-category {
+                margin-top: 30px;
+                font-size: 16px;
+                font-weight: 600;
+            }
+            #featured-title {
+                margin-top: 20px;
+            }
+            #featured-excerpt {
+                line-height: 1.8;
+                margin: 30px 0;
+            }
+            a {
+                color: black;
+                font-weight: 600;
+                margin-top: 0px;
+                font-size: 16px;
+                padding-left: 0;
+                &:hover {
+                    color: $primary-color;
+                    transition: color 0.2s ease-in-out;
+                }
+            }
+        }
+    }
+}
