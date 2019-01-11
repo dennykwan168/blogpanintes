@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700,800" rel="stylesheet">
+  <link rel="stylesheet" href="sass/materialize.css">
+  <link rel="stylesheet" href="sass/style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>Home</title>
+</head>
+
+<body><div>
+    <nav class="z-depth-0">
+        <div class="nav-wrapper white">
+            <a href="index.html" class="brand-logo">
+                <img style="width:200px" src="pic/logo.jpg" alt="">
+            </a>
+            <a href="" data-target="mobile-menu" class="sidenav-trigger right"><i id="menu-icon" class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a class="waves-effect black-text" href="mulai.html">Belajar investasi</a></li>
+                <li><a class="waves-effect dropdown-trigger black-text" href="#" data-target="dm-produk">Produk<i
+                            class="material-icons grey-text right">arrow_drop_down</i></a></li>
+                <li><a class="black-text" href="faq.html">FAQ</a></li>
+                <li><a class="black-text" href="#">Hubungi kami</a></li>
+            </ul>
+        </div>
+    </nav>
+    <ul id="dm-produk" class="dropdown-content">
+        <li><a class="black-text" href="#">Saham</a></li>
+        <li><a class="black-text" href="#">Reksa Dana</a></li>
+        <li><a class="black-text" href="#">Edukasi & Pelatihan</a></li>
+    </ul>
+  </div>
+
+  <ul class="sidenav" id="mobile-menu">
+    <li>
+        <div class="user-view">
+            <div class="background">
+                <img style="width:200px" src="pic/logo.jpg" alt="" id="side-logo">
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="divider"></div>
+    </li>
+    <li><a class="sidenav-item" href="mulai.html">Belajar investasi</a></li>
+
+    <li>
+        <ul class="collapsible collapsible-accordion">
+            <li><a style="padding: 0 31px" class="collapsible-header waves-effect sidenav-item tab-index-1">Produk<i
+                        class="material-icons grey-text right">arrow_drop_down</i></a>
+                <div class="collapsible-body">
+                    <ul>
+                        <li><a style="padding-left: 50px" href="#">Saham</a></li>
+                        <li><a style="padding-left: 50px" href="#">Reksadana</a></li>
+                        <li><a style="padding-left: 50px" href="#">Edukasi & Pelatihan</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </li>
+
+    <li><a class="sidenav-item" href="faq.html">FAQ</a></li>
+    <li><a class="sidenav-item" href="faq.html">Hubungi kami</a></li>
+    <div class="row">
+        <div class="col s4"></div>
+        <div class="col s4"></div>
+        <div class="col s4"></div>
+    </div>
+  </ul>
+<h1>hello world!</h1>
+<div class="row center-align footer-row">
+  <div class="container">
+      <div class="col s12 l2">
+          <h5>Home</h5>
+      </div>
+      <div class="col s12 l2">
+          <h5>Tentang kami</h5>
+      </div>
+      <div class="col s12 l2">
+          <h5>Blog</h5>
+      </div>
+      <div class="col s12 l2">
+          <h5>Produk</h5>
+      </div>
+      <div class="col s12 l2">
+          <h5>FAQ</h5>
+      </div>
+      <div class="col s12 l2">
+          <h5>Kontak</h5>
+      </div>
+  </div>
+
+  <div class="clearfix show-on-small"></div>
+
+  <div class="image-container">
+      <div class="col s6 m4 l2 left left-align hide-on-small-only">
+          <p id="copyright">Agen Penjual</p>
+          <img src="pic/logo-paninsekuritas.jpg" id="footer-logo">
+      </div>
+      <div class="col s6 m4 l2 left left-align hide-on-small-only">
+          <p id="copyright">Diawasi oleh</p>
+          <img src="pic/logo-ojk.jpg" id="ojk-logo">
+      </div>
+
+      <div class="col s12 m4 l2 right right-align hide-on-small-only">
+          <img src="pic/logo.jpg" id="footer-logo">
+          <p id="copyright">&copy 2019. Bijak Investasi</p>
+      </div>
+      <div class="col s6 center-align hide-on-med-and-up">
+          <p id="copyright">Agen Penjual</p>
+          <img src="pic/logo-paninsekuritas.jpg" id="footer-logo">
+      </div>
+      <div class="col s6 center-align hide-on-med-and-up">
+          <p id="copyright">Diawasi oleh</p>
+          <img src="pic/logo-ojk.jpg" id="ojk-logo">
+      </div>
+
+      <div class="col s12 center-align hide-on-med-and-up">
+          <img src="pic/logo.jpg" id="footer-logo">
+          <p id="copyright">&copy 2019. Bijak Investasi</p>
+      </div>
+      <div class="clearfix hide-on-small-only"></div>
+  </div>
+</div>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/materialize.min.js"></script>
+<script>
+    $(document).ready(function () {
+
+        //init sidenav
+        $('.sidenav').sidenav({
+            edge: 'right'
+        });
+
+        $('.dropdown-trigger').dropdown({
+            coverTrigger: false,
+            hover: true,
+            constrainWidth: false
+        });
+
+        $('select').formSelect();
+
+        //init menu dropdown
+        $('.collapsible').collapsible();
+
+    });
+</script></body>
+
+</html>
